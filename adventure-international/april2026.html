@@ -5,57 +5,49 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="x-apple-disable-message-reformatting">
+<title>Adventure International — April 2026</title>
 
-<style>
+<style type="text/css">
 html,body{margin:0!important;padding:0!important;width:100%!important;}
 *{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-table,td{border-collapse:collapse!important;}
-img{border:0;display:block;width:100%;height:auto;}
+table,td{border-collapse:collapse!important;mso-table-lspace:0pt!important;mso-table-rspace:0pt!important;}
+img{border:0;display:block;height:auto;line-height:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
 a{text-decoration:none;}
 
-/* ===== MOBILE ===== */
+/* ===== MOBILE OPTIMIZATION ===== */
 @media only screen and (max-width:600px){
 
-.email-container{
-  width:100%!important;
-  max-width:100%!important;
-}
+.email-container{width:100%!important;max-width:100%!important;}
+.mob-pad{padding:32px 22px!important;}
 
-/* padding */
-.mob-pad{
-  padding:30px 22px!important;
-}
+.mob-h1{font-size:34px!important;line-height:42px!important;}
+.mob-h2{font-size:30px!important;line-height:38px!important;}
+.mob-h3{font-size:24px!important;line-height:32px!important;}
+.mob-copy{font-size:17px!important;line-height:28px!important;}
 
-/* typography */
-h1{
-  font-size:32px!important;
-  line-height:40px!important;
-}
-h3{
-  font-size:24px!important;
-  line-height:32px!important;
-}
-p, td, a{
+p,td,a{
   font-size:17px!important;
   line-height:28px!important;
-}
-
-/* hero fix */
-.hero-inner{
-  width:100%!important;
-}
-.hero-box{
-  width:100%!important;
-  max-width:100%!important;
 }
 
 /* images */
 img{
   width:100%!important;
   max-width:100%!important;
+  height:auto!important;
+}
+.fluid{
+  width:100%!important;
+  max-width:100%!important;
 }
 
-/* 2 col stack */
+/* logos */
+.logo-img{
+  width:200px!important;
+  max-width:80%!important;
+}
+
+/* 2-column stacking */
 .two-col,
 .two-col-img{
   display:block!important;
@@ -71,48 +63,61 @@ img{
   width:100%!important;
 }
 
-/* buttons */
-a.btn{
-  display:block!important;
-  text-align:center!important;
-  padding:16px!important;
-  font-size:12px!important;
-}
-
-/* fix weird inline paddings */
+/* fix padding imbalance */
 td[style*="padding:38px 24px 40px 40px"]{
   padding:28px 22px!important;
 }
 
+/* hero padding */
+td[background]{
+  padding:28px 22px!important;
+}
+
+/* buttons */
+a[style*="display:inline-block"]{
+  padding:16px 28px!important;
+  font-size:11px!important;
+}
+}
+
+/* ===== DARK MODE SAFE ===== */
+@media (prefers-color-scheme: dark){
+body{background:#0b0b0b!important;}
+td{color:#e6e2db!important;}
+h1,h2,h3{color:#ffffff!important;}
+img{filter:none!important;}
 }
 </style>
 </head>
 
-<body style="margin:0;background:#e4ddd3;">
+<body style="margin:0;padding:0;background:#e4ddd3;">
 
 <table width="100%" bgcolor="#e4ddd3">
-<tr>
-<td align="center" style="padding:20px 10px;">
+<tr><td align="center" style="padding:28px 10px;">
 
-<table width="600" class="email-container" style="max-width:600px;background:#ffffff;">
+<table width="600" class="email-container" style="max-width:600px;">
 
 <!-- HEADER -->
 <tr>
 <td>
-<a href="https://adventure-international.com">
-<img src="https://mcusercontent.com/0fa78637634f0737ec6118984/images/56765eba-c962-9ff6-fd05-8f4900634ac9.png">
+<a href="https://adventure-international.com" target="_blank">
+<img src="https://mcusercontent.com/0fa78637634f0737ec6118984/images/56765eba-c962-9ff6-fd05-8f4900634ac9.png" width="600" class="fluid">
 </a>
 </td>
 </tr>
 
 <!-- HERO -->
 <tr>
-<td background="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/hero.png" style="background-size:cover;padding:30px;">
-<table class="hero-inner">
+<td background="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/hero.png" style="background-size:cover;background-position:center;padding:25px 0 34px 48px;">
+<table>
 <tr>
-<td class="hero-box" style="background:rgba(0,0,0,0.6);padding:20px;">
-<h1 style="color:#fff;margin:0 0 12px;">Adventure Awaits: Peaks, Surfing, Orcas and More!</h1>
-<p style="color:#ede6da;margin:0;">From the wild beauty of the Pacific Northwest to extraordinary surf destinations.</p>
+<td style="background-color:rgba(5,5,5,0.55);padding:20px 18px 22px;">
+<h1 style="margin:0 0 14px;font-family:Georgia;font-size:30px;color:#ffffff;">
+Adventure Awaits: Peaks, Surfing, Orcas and More!
+</h1>
+<p style="margin:0;font-family:Georgia;font-size:18px;color:#ede6da;">
+From the wild beauty of the Pacific Northwest to the world’s most extraordinary surf destinations, see how our itineraries expertly blend adventure and luxury.
+</p>
 </td>
 </tr>
 </table>
@@ -121,67 +126,90 @@ td[style*="padding:38px 24px 40px 40px"]{
 
 <!-- INTRO -->
 <tr>
-<td class="mob-pad" style="padding:50px;">
-<h1 style="margin:0 0 12px;">Journeys Beyond the Ordinary</h1>
-<p>This month we focus on Northern Journeys and Luxsurf, highlighting standout itineraries across the Pacific Northwest and beyond.</p>
-<p>The range of experiences is unmatched — from waterfall hikes and Orca encounters to surfing and safari extensions.</p>
-</td>
-</tr>
+<td bgcolor="#ffffff" class="mob-pad" style="padding:52px 56px 48px;">
 
-<!-- IMAGE -->
-<tr>
-<td>
-<img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/oregon.png">
-</td>
-</tr>
+<p style="font-size:9px;letter-spacing:3.5px;color:#c1a052;">This Month</p>
 
-<!-- TEXT -->
-<tr>
-<td class="mob-pad" style="padding:40px;background:#111;color:#fff;">
-<h3>Oregon Adventure</h3>
-<p style="color:#c4bba8;">Experience Pinot Noir country and rugged coastline with hiking, surfing, and coastal exploration.</p>
+<h1 class="mob-h1" style="font-family:Georgia;font-size:33px;">
+Journeys Beyond the Ordinary
+</h1>
 
-<a href="https://itineraries.safariportal.app/Oregon-Adventure/1630270026802005087" class="btn" style="background:#c1a052;color:#000;padding:12px 20px;display:inline-block;">View Sample Itinerary</a>
+<p class="mob-copy">
+This month we focus on our sister brands Northern Journeys and Luxsurf with some beautiful journeys. We have recently fallen in love with the Pacific Northwest (PNW) and its array of experiences between Oregon, Washington and British Columbia.
+</p>
+
+<p class="mob-copy">
+The amount of activities are incredible from waterfall hikes to seeing Orcas and even surfing. We also wanted to include some programs that offer more than just surfing with chances for safari and even climbing the tallest peak in the Atlas Mountains.
+</p>
+
+<p style="font-size:18px;">We look forward to creating more extraordinary journeys with you.</p>
 
 </td>
 </tr>
 
-<!-- 2 COL -->
+<!-- CANADA IMAGE -->
 <tr>
-<td bgcolor="#f7f2ea">
-<table width="100%">
-<tr>
-
-<td class="two-col" width="300" style="padding:38px 24px 40px 40px;">
-<h3>African Surfari</h3>
-<p>Remote surf meets safari. Explore uncrowded waves and Big Five wildlife in one journey.</p>
-</td>
-
-<td class="two-col-img" width="300">
-<img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/African%20Surfari.png">
-</td>
-
+<td><img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/Canada_%20%E2%80%9CFly-In%E2%80%9D%20Wilderness%20Adventure.png"></td>
 </tr>
-</table>
+
+<!-- CANADA TEXT -->
+<tr>
+<td bgcolor="#111111" class="mob-pad" style="padding:42px 56px;">
+
+<h3 class="mob-h3" style="color:#f5f0e8;">Fly-In Wilderness Adventure</h3>
+
+<p class="mob-copy" style="color:#c4bba8;">
+This ultimate British Columbia wilderness itinerary pairs two ultra-luxury remote lodges — connected by Seaplane flights over the Great Bear Rainforest and Vancouver Island.
+</p>
+
+<a href="https://itineraries.safariportal.app/Canada-Fly-In-Wilderness-Adventure/1663481311853020378" style="display:inline-block;padding:13px 26px;background:#c1a052;color:#000;">
+View Sample Itinerary
+</a>
+
+</td>
+</tr>
+
+<!-- SAN JUAN -->
+<tr>
+<td><img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/San%20Juan%20%E2%80%9CIsland-Hopping.png"></td>
+</tr>
+
+<tr>
+<td class="mob-pad" style="padding:42px 56px;">
+<h3 class="mob-h3">San Juan Island-Hopping</h3>
+<p class="mob-copy">
+A trip combining San Juan and Orcas Islands offers the ultimate Pacific Northwest escape.
+</p>
+</td>
+</tr>
+
+<!-- OREGON -->
+<tr>
+<td><img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/oregon.png"></td>
+</tr>
+
+<tr>
+<td class="mob-pad" style="padding:42px 56px;background:#111;color:#fff;">
+<h3 class="mob-h3">Oregon Adventure</h3>
+<p class="mob-copy">Experience the perfect Oregon getaway combining world-class Pinot Noir and coastal beauty.</p>
 </td>
 </tr>
 
 <!-- FOOTER -->
 <tr>
-<td class="mob-pad" style="padding:40px;background:#0a0a0a;color:#c4bba8;text-align:center;">
+<td class="mob-pad" style="padding:40px;background:#0a0a0a;text-align:center;color:#c4bba8;">
 
-<img src="https://adventure-international.com/wp-content/uploads/2018/07/ADVENTURE-INTERNATIONAL-logo.svg" width="200" style="margin:0 auto 20px;">
+<img src="https://adventure-international.com/wp-content/uploads/2018/07/ADVENTURE-INTERNATIONAL-logo.svg" width="200" style="margin-bottom:20px;">
 
 <p>+1 (888) 664-3865</p>
-<p><a href="mailto:info@adventure-international.com" style="color:#c4bba8;">info@adventure-international.com</a></p>
-<p><a href="https://www.adventure-international.com" style="color:#c1a052;">https://www.adventure-international.com</a></p>
+<p><a href="mailto:info@adventure-international.com">info@adventure-international.com</a></p>
+<p><a href="https://www.adventure-international.com">https://www.adventure-international.com</a></p>
 
 </td>
 </tr>
 
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 
 </body>

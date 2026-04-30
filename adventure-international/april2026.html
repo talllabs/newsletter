@@ -13,6 +13,8 @@ html,body{margin:0!important;padding:0!important;width:100%!important;}
 table,td{border-collapse:collapse!important;mso-table-lspace:0pt!important;mso-table-rspace:0pt!important;}
 img{border:0;display:block;height:auto;line-height:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
 a{text-decoration:none;}
+.lux-btn-overlay{display:none;}
+.lux-mob-btn{display:none;}
 @media only screen and (max-width:600px){
 .email-container{width:90.9%!important;max-width:90.9%!important;zoom:1.1;}
 .mob-pad{padding:28px 22px!important;}
@@ -23,8 +25,13 @@ a{text-decoration:none;}
 .fluid{width:100%!important;max-width:100%!important;height:auto!important;}
 .logo-img{width:220px!important;max-width:88%!important;}
 .two-col{display:block!important;width:100%!important;box-sizing:border-box!important;padding:28px 22px 30px!important;}
-.two-col-img{display:block!important;width:100%!important;padding:0!important;}
+.two-col-img{display:flex!important;flex-direction:column-reverse!important;width:100%!important;padding:0!important;}
 .two-col-img img{width:100%!important;max-width:100%!important;height:auto!important;}
+.lux-img-wrap{width:100%!important;}
+.lux-btn-overlay{display:flex!important;align-items:flex-end!important;padding-bottom:14%!important;}
+.lux-desk-btn{display:none!important;}
+.lux-mob-btn{display:block!important;}
+.lux-quote{padding:16px 22px 20px!important;}
 .hero-bg-td{padding:20px 16px 24px!important;}
 .hero-overlay-box{width:auto!important;max-width:100%!important;box-sizing:border-box!important;}
 .mob-btn{font-size:10px!important;}
@@ -383,16 +390,22 @@ African Surfari
 <tr><td width="32" height="1" bgcolor="#c1a052" style="font-size:0;"></td></tr>
 </table>
 
-<p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#4a4038;">
+<p style="margin:0 0 26px;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#4a4038;">
 Using especially adapted 4&#215;4 vehicles and professional guides you head out on an amazing adventure to find remote beaches and wild surf on the South African / Mozambique border. A Private Villa is your home base from which to explore uncrowded waves in Ponta do Ouro. Afterwards you head on safari, staying in luxury safari accommodations to afford you the very best positions for game viewing in the KwaZulu-Natal area of South Africa.
 </p>
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="lux-desk-btn">
+<tr><td bgcolor="#c1a052" style="padding:0;">
+<a href="https://itineraries.safariportal.app/African-Surfari/1625842491380991063" target="_blank" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
+</td></tr>
+</table>
 
 </td>
 <!-- Right: image with button overlay + pull quote -->
 <td class="two-col-img" width="300" valign="top" style="width:300px;padding:0;vertical-align:top;">
-<div style="position:relative;line-height:0;">
+<div class="lux-img-wrap" style="position:relative;line-height:0;">
 <img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/African%20Surfari.png" width="300" alt="African Surfari" style="display:block;width:100%;height:auto;">
-<div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
+<div class="lux-btn-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0">
 <tr><td bgcolor="#c1a052" style="padding:0;">
 <a href="https://itineraries.safariportal.app/African-Surfari/1625842491380991063" target="_blank" class="mob-btn" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
@@ -400,7 +413,7 @@ Using especially adapted 4&#215;4 vehicles and professional guides you head out 
 </table>
 </div>
 </div>
-<p style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#6b5e4e;">Here you have chances of seeing the Big Five in a Phinda Private Game Reserve. A true African Surfari!</p>
+<p class="lux-quote" style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#6b5e4e;">Here you have chances of seeing the Big Five in a Phinda Private Game Reserve. A true African Surfari!</p>
 </td>
 </tr>
 </table>
@@ -430,16 +443,22 @@ Surf &amp; Safari: Sri Lanka &amp; Maldives
 <tr><td width="32" height="1" bgcolor="#c1a052" style="font-size:0;"></td></tr>
 </table>
 
-<p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#b8af9c;">
+<p style="margin:0 0 26px;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#b8af9c;">
 A trip combining Sri Lanka and the Maldives offers a perfect contrast between energetic exploration and remote serenity. You can transition from tracking leopards in dense jungles to riding consistent Indian Ocean swells, concluding with the luxurious, uncrowded breaks of the Maldives. Sri Lanka is a hub for &#8220;surf and turf&#8221; experiences, where wildlife parks are often just a short drive from world class waves.
 </p>
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="lux-desk-btn">
+<tr><td bgcolor="#c1a052" style="padding:0;">
+<a href="https://itineraries.safariportal.app/Surf-Safari-Sri-Lanka-Maldives/1654635397537334849" target="_blank" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
+</td></tr>
+</table>
 
 </td>
 <!-- Right: image with button overlay + pull quote -->
 <td class="two-col-img" width="300" valign="top" style="width:300px;padding:0;vertical-align:top;">
-<div style="position:relative;line-height:0;">
+<div class="lux-img-wrap" style="position:relative;line-height:0;">
 <img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/Surf%20%26%20Safari_%20Sri%20Lanka%20%26%20Maldives.png" width="300" alt="Surf &amp; Safari: Sri Lanka &amp; Maldives" style="display:block;width:100%;height:auto;">
-<div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
+<div class="lux-btn-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0">
 <tr><td bgcolor="#c1a052" style="padding:0;">
 <a href="https://itineraries.safariportal.app/Surf-Safari-Sri-Lanka-Maldives/1654635397537334849" target="_blank" class="mob-btn" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
@@ -447,7 +466,7 @@ A trip combining Sri Lanka and the Maldives offers a perfect contrast between en
 </table>
 </div>
 </div>
-<p style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#9c9080;">After the cultural richness of Sri Lanka, a short flight takes you to the Maldives for a more tranquil surfing experience.</p>
+<p class="lux-quote" style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#9c9080;">After the cultural richness of Sri Lanka, a short flight takes you to the Maldives for a more tranquil surfing experience.</p>
 </td>
 </tr>
 </table>
@@ -477,16 +496,22 @@ Summit to Sea
 <tr><td width="32" height="1" bgcolor="#c1a052" style="font-size:0;"></td></tr>
 </table>
 
-<p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#4a4038;">
+<p style="margin:0 0 26px;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#4a4038;">
 Ready to swap hiking boots for wetsuits? Experience the ultimate Moroccan contrast on our &#8220;Summit to Sea&#8221; adventure. Enjoy the bazaars of Marrakech and luxuriate in Riads, before trekking deep into the High Atlas Mountains, navigating rocky trails and Berber villages to summit Mt Toubkal &#8212; North Africa&#8217;s highest peak. After earning sunrise views, travel to the Atlantic coast to spend your days surfing the peeling right-handers of Taghazout.
 </p>
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="lux-desk-btn">
+<tr><td bgcolor="#c1a052" style="padding:0;">
+<a href="https://itineraries.safariportal.app/Morocco-Summit-to-Sea/1654757059985409669" target="_blank" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
+</td></tr>
+</table>
 
 </td>
 <!-- Right: image with button overlay + pull quote -->
 <td class="two-col-img" width="300" valign="top" style="width:300px;padding:0;vertical-align:top;">
-<div style="position:relative;line-height:0;">
+<div class="lux-img-wrap" style="position:relative;line-height:0;">
 <img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/new%20Morocco_%20Summit%20to%20Sea.png" width="300" alt="Morocco: Summit to Sea" style="display:block;width:100%;height:auto;">
-<div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
+<div class="lux-btn-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0">
 <tr><td bgcolor="#c1a052" style="padding:0;">
 <a href="https://itineraries.safariportal.app/Morocco-Summit-to-Sea/1654757059985409669" target="_blank" class="mob-btn" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
@@ -494,7 +519,7 @@ Ready to swap hiking boots for wetsuits? Experience the ultimate Moroccan contra
 </table>
 </div>
 </div>
-<p style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#6b5e4e;">It&#8217;s the perfect blend of high-altitude challenge and coastal chill, featuring stunning scenery, delicious tagines, and world-class waves.</p>
+<p class="lux-quote" style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#6b5e4e;">It&#8217;s the perfect blend of high-altitude challenge and coastal chill, featuring stunning scenery, delicious tagines, and world-class waves.</p>
 </td>
 </tr>
 </table>
@@ -524,16 +549,22 @@ Surfing &amp; Machu Picchu
 <tr><td width="32" height="1" bgcolor="#c1a052" style="font-size:0;"></td></tr>
 </table>
 
-<p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#b8af9c;">
+<p style="margin:0 0 26px;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:26px;color:#b8af9c;">
 From the Pacific swells of Lima to the ancient stone paths of the Andes, Peru offers a rare journey that spans two distinct worlds of &#8220;surf and summit&#8221;. This adventure combines the raw energy of coastal surfing with the spiritual challenge of trekking to one of the world&#8217;s most iconic wonders. Begin in Lima, an underrated surfing destination and the birthplace of ceviche. Experience epic waves and a world-class gastronomic scene.
 </p>
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="lux-desk-btn">
+<tr><td bgcolor="#c1a052" style="padding:0;">
+<a href="https://itineraries.safariportal.app/Peru-Surfing-Machu-Picchu/1668538268154595169" target="_blank" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
+</td></tr>
+</table>
 
 </td>
 <!-- Right: image with button overlay + pull quote -->
 <td class="two-col-img" width="300" valign="top" style="width:300px;padding:0;vertical-align:top;">
-<div style="position:relative;line-height:0;">
+<div class="lux-img-wrap" style="position:relative;line-height:0;">
 <img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/new%20Peru_%20Surfing%20%26%20Machu%20Picchu.png" width="300" alt="Peru: Surfing &amp; Machu Picchu" style="display:block;width:100%;height:auto;">
-<div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
+<div class="lux-btn-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0">
 <tr><td bgcolor="#c1a052" style="padding:0;">
 <a href="https://itineraries.safariportal.app/Peru-Surfing-Machu-Picchu/1668538268154595169" target="_blank" class="mob-btn" style="display:inline-block;padding:13px 26px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#0a0a0a;text-decoration:none;">View Sample Itinerary</a>
@@ -541,7 +572,7 @@ From the Pacific swells of Lima to the ancient stone paths of the Andes, Peru of
 </table>
 </div>
 </div>
-<p style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#9c9080;">Fly to Cusco and begin your journey into high altitude passes, glacial lakes, lush cloud forests, luxury glamping, the famous Sacred Valley, and finally trekking through the Sun Gate to reach Machu Picchu.</p>
+<p class="lux-quote" style="margin:0;line-height:1.67;padding:18px 20px 20px 16px;border-left:2px solid #c1a052;font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:20px;font-style:italic;color:#9c9080;">Fly to Cusco and begin your journey into high altitude passes, glacial lakes, lush cloud forests, luxury glamping, the famous Sacred Valley, and finally trekking through the Sun Gate to reach Machu Picchu.</p>
 </td>
 </tr>
 </table>
@@ -602,6 +633,24 @@ From the Pacific swells of Lima to the ancient stone paths of the Andes, Peru of
 </td>
 </tr>
 <tr><td height="2" bgcolor="#c1a052" style="font-size:0;"></td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ============================================================ -->
+<!-- AS SEEN IN -->
+<!-- ============================================================ -->
+<tr>
+<td bgcolor="#ffffff">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td height="1" bgcolor="#e2d5be" style="font-size:0;"></td></tr>
+<tr>
+<td align="center" class="mob-pad" style="padding:42px 40px 46px;">
+<p style="margin:0 0 28px;font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:bold;letter-spacing:4px;text-transform:uppercase;color:#c1a052;">As Seen In</p>
+<img src="https://raw.githubusercontent.com/talllabs/newsletter/refs/heads/main/adventure-international/AI%20April%202026%20Email%20Mailchimp/presshits.png" width="520" alt="As Seen In" class="fluid" style="display:block;margin:0 auto;width:520px;max-width:100%;height:auto;">
+</td>
+</tr>
+<tr><td height="1" bgcolor="#e2d5be" style="font-size:0;"></td></tr>
 </table>
 </td>
 </tr>
